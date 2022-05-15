@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Registro</title>
+    <style type="text/css">
+        .hd {
+            background-color: #F7A399;
+            overflow: hidden;
+            height: 150px;
+            width: 100%;
+            margin: 0 0;
+        }
+
+        .hd a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #133C55;
+            padding: 14px 16px;
+            line-height: 110px;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        .hd a:hover {
+            background-color: #F38375;
+            color: #001219;
+            transition: 0.4s ease-in-out
+        }
+
+        .hd a.active {
+            background-color: #f07665;
+            color: #001219;
+        }
+
+        .form__group {
+            position: relative;
+            padding: 15px 0 0;
+            margin-top: 10px;
+            width: 50%;
+        }
+
+        .form__field {
+            font-family: inherit;
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid #133C55;
+            outline: 0;
+            font-size: 1.3rem;
+            color: #2B2D42;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+        }
+
+        ::placeholder {
+            color: transparent;
+        }
+
+        :placeholder-shown~.form__label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 20px;
+        }
+
+        .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: #2B2D42;
+        }
+
+        .form__label:focus {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: #B23A48;
+            font-weight: 700;
+        }
+
+        .form__field:focus {
+            padding-bottom: 6px;
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, #B23A48, #461220);
+            border-image-slice: 1;
+        }
+
+        .botao {
+            color: #2B2D42;
+            background-color: #F7A399;
+            font-size: 20px;
+            padding: 10px 15px;
+            border: 2px solid #2B2D42;
+        }
+
+        .botao:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: #F38375;
+        }
+    </style>
+    <script language="JavaScript">
+
+        function valida_dados(nomeform) {
+            if (nomeform.nome.value == "") {
+                alertt("Por favor digite o nome.");
+                return false;
+            }
+
+            if (nomeform.email.value == "" || nomeform.email.value.index0f('@', '0') == -1 || nomeform.email.valueindex0f('.', '0') == -1) {
+                alert("E-mail inválido");
+                return false;
+            }
+
+            if (nomeform.senha.value.length < 5 || nomeform.senha.value.length > 15) {
+                alert("A senha deve conter entre 5 e 15 caracteres");
+                return false;
+            }
+
+            if (nomeform.senha.value.indes0f(' ', '0') != -1) {
+                alert("A senha não pode conter espaços em branco");
+                return false;
+            }
+
+            if (nomeform.senha.value != nomeform.confirmação.value) {
+                alert("Senhas não conferem, você digitou duas senhas diferentes");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body
+    style="background: -webkit-gradient(linear, left top, right top, from(#91E5F6), to(#59A5D8)) no-repeat;
+    background: -moz-linear-gradient(left, #91E5F6, #59A5D8); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <div class="hd">
+        <figure><img src="wiistude_logo.png" alt="Wiistude" height="125px" ; width="125px" ;
+                style="padding-right: 250px;float:left;border-radius: 100px;"></figure>
+        <a href="index.html"> Home </a>
+        <a href="materias.html"> Matérias </a>
+        <a href="vestibulares.html"> Vestibulares </a>
+        <a href="planos.html"> Planos </a>
+        <a href="duvidas.html"> Dúvidas </a>
+        <a href="registro.html"><img src="working.png" alt="Registro" height="125px" ; width="125px" ;
+                style="float:right; padding-right: 20px; "></a>
+    </div>
+    <form method="POST" action="index.html" onsubmit="return valida_dados(this)">
+        <h1 style="text-align: center; color: #2B2D42; padding-bottom: 50px;">Faça seu registro:</h1>
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Nome" name="nome" id='nomeid' required />
+            <label for="name" class="form__label">Nome</label>
+        </div>
+        <div class="form__group field">
+            <input type="email" class="form__field" placeholder="E-mail" name="email" id='emailid' required />
+            <label for="email" class="form__label">E-mail</label>
+        </div>
+        <div class="form__group field">
+            <input type="password" class="form__field" placeholder="Senha" name="senha" id='senhaid' required />
+            <label for="senha" class="form__label">Senha</label>
+        </div>
+        <div class="form__group field">
+            <input type="password" class="form__field" placeholder="Senha" name="confirmacao" id='senhaid' required />
+            <label for="senha" class="form__label">Confirme sua senha</label>
+        </div>
+        <div style="color:#2B2D42">
+            <h4>Sou:</h4>
+            <input type="radio"><label>Estudante do ensino fundamental</label> <br>
+            <input type="radio"><label>Estudante do ensino médio</label> <br>
+            <input type="radio"><label>Estudante de ensino superior</label> <br>
+            <input type="radio"><label>Não sou estudante</label>
+        </div>
+        <div style="padding-top:20px">
+            <input type="checkbox" placeholder="termos e condições" required />
+            <label style="color: #2B2D42;">Aceito os termos e condições do site</label>
+        </div>
+        <div style="padding-top:30px">
+            <input class="botao" type="submit" value="Enviar">
+        </div>
+    </form>
+    <div>
+        <p>Já tem registro? Faça o <a style="text-decoration: none;" href="login.html">login</a></p>
+    </div>
+    <p style="padding-top:80px"></p>
+    <div style="width: 100%; height:220px;background-color: #F7A399; margin-top:10px">
+        <table>
+            <tr>
+                <td> <img src="wiistude_logo.png" alt="Wiistude"
+                        style="border-radius: 100px ;width: 200px; height: 200px; padding-top:7px; padding-left:27px">
+                </td>
+                <td>
+                    <p
+                        style="font-weight: bold; color:#001219; font-size: larger; margin-left: 80px; width:600px; padding-right: 100px;">
+                        “A educação é a arma mais poderosa que se pode usar para mudar o mundo.”</p>
+                    <p style="font-weight: bold; color:#001219; font-size: medium; margin-left: 80px">-Nelson Mandela
+                    </p>
+                </td>
+                <td>
+                    <a href="duvidas.html"><img src="Redes-sociais.png" style="width: 200px;"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

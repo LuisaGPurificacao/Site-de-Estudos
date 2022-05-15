@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Planos</title>
+  <meta charset='utf-8'>
+  <style type="text/css">
+    .hd {
+      background-color: #F7A399;
+      overflow: hidden;
+      height: 150px;
+      width: 100%;
+      margin: 0 0;
+    }
+
+    .hd a {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: #133C55;
+      padding: 14px 16px;
+      line-height: 110px;
+      text-decoration: none;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 50px;
+    }
+
+    .hd a:hover {
+      background-color: #F38375;
+      color: #001219;
+      transition: 0.4s ease-in-out
+    }
+
+    .hd a.active {
+      background-color: #f07665;
+      color: #001219;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .caixas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .caixa {
+      background-color: #F0D7DF;
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      flex: 1;
+      padding: 0 30px 30px;
+      margin: 2%;
+      min-width: 250px;
+      max-width: 350px;
+    }
+
+    .caixa2 {
+      background-color: #F7E6DA;
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      flex: 1;
+      padding: 0 30px 30px;
+      margin: 2%;
+      min-width: 250px;
+      max-width: 350px;
+    }
+
+    .caixa3 {
+      background-color: #CAE0E4;
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      flex: 1;
+      padding: 0 30px 30px;
+      margin: 2%;
+      min-width: 250px;
+      max-width: 350px;
+    }
+
+    .preco {
+      margin: 24px 0;
+      font-size: 36px;
+      font-weight: 900;
+    }
+
+    .preco sub,
+    .preco sup {
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    .lista {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .lista li {
+      font-weight: 100;
+      padding: 12px 0;
+      font-weight: 100;
+    }
+
+    .lista li:not(:last-of-type) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .botao {
+      border-radius: 25px;
+      border: none;
+      background-color: #eba2b9;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 10px 15px;
+      margin-top: 20px;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .botao:hover {
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .botao2 {
+      border-radius: 25px;
+      border: none;
+      background-color: #f1c19e;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 10px 15px;
+      margin-top: 20px;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .botao2:hover {
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .botao3 {
+      border-radius: 25px;
+      border: none;
+      background-color: #4dc8dd;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 10px 15px;
+      margin-top: 20px;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .botao3:hover {
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body
+  style="background: -webkit-gradient(linear, left top, right top, from(#91E5F6), to(#59A5D8)) no-repeat;
+    background: -moz-linear-gradient(left, #91E5F6, #59A5D8); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+  <div class="hd">
+    <figure><img src="wiistude_logo.png" alt="Wiistude" height="125px" ; width="125px" ;
+      style="padding-right: 250px;float:left;border-radius: 100px;"></figure>
+    <a href="index.html"> Home </a>
+    <a href="materias.html"> Matérias </a>
+    <a href="vestibulares.html"> Vestibulares </a>
+    <a href="planos.html" class="active"> Planos </a>
+    <a href="duvidas.html"> Dúvidas </a>
+    <a href="registro.html"><img src="working.png" alt="Wiistude" height="125px" ; width="125px" ;
+        style="float:right; padding-right: 20px; "></a>
+  </div>
+  <h1 style="text-align: center; color: #2B2D42; padding-bottom: 10px; padding-top:10px">Conheça nossos planos</h1>
+  <div class="caixas">
+    <div class="caixa text-center">
+      <h5>BÁSICO</h5>
+      <p class="preco"><sup>R$</sup>0<sub>,00</sub></p>
+      <ul class="lista">
+        <li> Resumos ilimitados</li>
+        <li><strong>500</strong> videoaulas </li>
+        <li><strong>10 mil</strong> exercícios</li>
+        <li>Simulados</li>
+      </ul>
+      <button class="botao"><a href="registro.html" style="text-decoration: none; color: ivory;">SE
+          REGISTRE</a></button>
+    </div>
+
+    <div class="caixa2 text-center">
+      <h5>MÉDIO</h5>
+      <p class="preco"><sup>R$</sup>39<sub>,99/mês</sub></p>
+      <ul class="lista">
+        <li> Resumos ilimitados</li>
+        <li><strong>1000</strong> videoaulas</li>
+        <li><strong>25 mil</strong> exercícios</li>
+        <li> Simulados com relatório de desempenho </li>
+        <li> Plano de estudo personalizado </li>
+      </ul>
+      <button class="botao2">COMPRAR</button>
+    </div>
+
+    <div class="caixa3 text-center">
+      <h5>AVANÇADO</h5>
+      <p class="preco"><sup>R$</sup>89<sub>,99/mês</sub></p>
+      <ul class="lista">
+        <li> Resumos ilimitados</li>
+        <li><strong>+1500</strong> videoaulas</li>
+        <li><strong>+50 mil</strong> exercícios</li>
+        <li>Simulados com relatório de desempenho</li>
+        <li> Plano de estudo personalizado </li>
+        <li>Tire dúvidas com professores</li>
+      </ul>
+      <button class="botao3">COMPRAR</button>
+    </div>
+  </div>
+  <p style="padding-top:80px"></p>
+    <div style="width: 100%; height:220px;background-color: #F7A399; margin-top:10px">
+        <table>
+            <tr>
+                <td> <img src="wiistude_logo.png" alt="Wiistude"
+                        style="border-radius: 100px ;width: 200px; height: 200px; padding-top:7px; padding-left:27px">
+                </td>
+                <td>
+                    <p
+                        style="font-weight: bold; color:#001219; font-size: larger; margin-left: 80px; width:600px; padding-right: 100px;">
+                        “A educação é a arma mais poderosa que se pode usar para mudar o mundo.”</p>
+                    <p style="font-weight: bold; color:#001219; font-size: medium; margin-left: 80px">-Nelson Mandela
+                    </p>
+                </td>
+                <td>
+                    <a href="duvidas.html"><img src="Redes-sociais.png" style="width: 200px;"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
