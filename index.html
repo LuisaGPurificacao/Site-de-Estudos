@@ -3,142 +3,80 @@
 
 <head>
     <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Home</title>
-    <style type="text/css">
-        .hd {
-            background-color: #F7A399;
-            overflow: hidden;
-            height: 150px;
-            width: 100%;
-            margin: 0 0;
-        }
-
-        .hd a {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            color: #133C55;
-            padding: 14px 16px;
-            line-height: 110px;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            border-radius: 50px;
-        }
-
-        .hd a:hover {
-            background-color: #F38375;
-            color: #001219;
-            transition: 0.4s ease-in-out
-        }
-
-        .hd a.active {
-            background-color: #f07665;
-            color: #001219;
-        }
-
-        .registre {
-            background-color: #F7A399;
-            text-align: center;
-            text-decoration: none;
-            color: #001219;
-            padding: 15px 15px;
-            border-radius: 50px;
-            border-width: 2px;
-            border-color: #2B2D42;
-            border-style: dashed;
-        }
-
-        .registre:hover {
-            background-color: #F38375;
-            transition: 1.6s ease-in-out
-        }
-
-        .imagem {
-            opacity: 70%;
-        }
-
-        .imagem:hover {
-            opacity: 100%;
-        }
-    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js' defer></script>
 </head>
 
-<body
-    style="background: -webkit-gradient(linear, left top, right top, from(#91E5F6), to(#59A5D8)) no-repeat;
-    background: -moz-linear-gradient(left, #91E5F6, #59A5D8); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-    <div class="hd">
-        <figure><img src="wiistude_logo.png" alt="Wiistude" height="125px" ; width="125px" ;
-                style="padding-right: 250px;float:left;border-radius: 100px;"></figure>
-        <a href="index.html" class="active"> Home </a>
-        <a href="materias.html"> Matérias </a>
-        <a href="vestibulares.html"> Vestibulares </a>
-        <a href="planos.html"> Planos </a>
-        <a href="duvidas.html"> Dúvidas </a>
-        <a href="registro.html"><img src="working.png" alt="Wiistude" height="125px" ; width="125px" ;
-                style="float:right; padding-right: 20px; "></a>
-    </div>
-    <img src="multiracial-friends-studying-with-electronic-gadgets-and-books-sitting-in-study-room.jpg" width="100%">
-    <table
-        style="padding-top:100px;padding-left:300px;padding-bottom: 100px ;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-        <tr>
-            <td><img src="Learning-amico.png" width="350px" ; height="350px"></td>
-            <td width="300px">
+<body>
+    <header>
+        <nav class="menu">
+            <figure><img src="img/wiistude_logo.png" alt="Wiistude" class="logo"></figure>
+            <a href="index.html" class="active">Home</a>
+            <a href="materias.html">Matérias</a>
+            <a href="vestibulares.html">Vestibulares</a>
+            <a href="planos.html">Planos</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="registro.html"><img src="img/working.png" alt="Wiistude" class="registro"></a>
+        </nav>
+        <img src="img/banner.jpg" class="banner">
+    </header>
+    <section>
+        <div class="estude">
+            <img src="img/aprendendo.png" class="aprendendo">
+            <div class="estude2">
                 <h1>Estude melhor para os vestibulares!</h1>
                 <p>O nosso foco é com que você passe em vestibulares e provas como o ENEM.</p>
-                <p>Nós podemos organizar o seu dia a dia de acordo com sua rotina, e te indicaremos os melhores horários
+                <p>Nós podemos organizar o seu dia a dia de acordo com sua rotina, e te indicaremos os melhores
+                    horários
                     e técnicas de estudo.</p>
-            </td>
-        </tr>
-    </table>
-    <div style="background-color: #fcd062;opacity: 75%; ;width: 100%; height: 100px; text-align: center;">
-        <h1 style="padding-top: 30px">Você vai ter:</h1>
-    </div>
-    <table
-        style="padding-left:180px; padding-top:100px; padding-bottom:100px;border: #001219 1px;font-size: 18px; text-align:center">
-        <tr>
-            <td width="300px" height="200px" style="padding-right:20px;padding-left:20px; color:#B23A48">
-                <p>Acesso à muitos resumos e materiais, todos organizados </p>
-            </td>
-            <td width="300px" height="200px" style="padding-right:20px;padding-left:20px; color:#8C2F39">
+            </div>
+        </div>
+        <div class="servico">
+            <h1>Você vai ter:</h1>
+
+            <div class="servico2">
+                <p>Acesso à muitos resumos e materiais, todos organizados</p>
+
                 <p>Uma rotina de estudos que você nunca viu antes</p>
-            </td>
-            <td width="300px" height="200px" style="padding-right:20px;padding-left:20px; color:#461220">
+
                 <p>Muitos exercícios para você praticar!</p>
-            </td>
-        </tr>
-    </table>
-    <p style="text-align: center; padding-bottom: 100px;"><a href="registro.html" class="registre">Registre-se</a></p>
-    <h1 style="padding-top: 30px; text-align: center;padding-bottom: 20px;">Destaque em:</h1>
-    <table width="100%" style="text-align: center; background-color: #E9D8A6; padding-left:150px; opacity: 80%;">
-        <tr>
-            <td>
-                <img class="imagem" src="enem-2018-logo1.webp">
-            </td>
-            <td style="padding-left: 20px;">
-                <img class="imagem" src="Vestibular-FUVEST-2020.webp">
-            </td>
-        </tr>
-    </table>
-    <p style="padding-top:80px"></p>
-    <div style="width: 100%; height:220px;background-color: #F7A399; margin-top:10px">
-        <table>
-            <tr>
-                <td> <img src="wiistude_logo.png" alt="Wiistude"
-                        style="border-radius: 100px ;width: 200px; height: 200px; padding-top:7px; padding-left:27px">
-                </td>
-                <td>
-                    <p
-                        style="font-weight: bold; color:#001219; font-size: larger; margin-left: 80px; width:600px; padding-right: 100px;">
-                        “A educação é a arma mais poderosa que se pode usar para mudar o mundo.”</p>
-                    <p style="font-weight: bold; color:#001219; font-size: medium; margin-left: 80px">-Nelson Mandela
-                    </p>
-                </td>
-                <td>
-                    <a href="duvidas.html"><img src="Redes-sociais.png" style="width: 200px;"></a>
-                </td>
-            </tr>
-        </table>
-    </div>
+            </div>
+        </div>
+        <div class="botao">
+            <p class="botao2">
+                <a href="registro.html" class="registre">Registre-se</a>
+            </p>
+        </div>
+        <div class="destaque">
+            <h1>Destaque em:</h1>
+            <div class="destaque2">
+
+                <img class="imagem" src="img/enem-2018-logo1.webp">
+
+                <img class="imagem" src="img/Vestibular-FUVEST-2020.webp">
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="rodape">
+            <img src="img/wiistude_logo.png" alt="Wiistude">
+            <div class="referencia">
+                <p class="referencia1">
+                    “A educação é a arma mais poderosa que se pode usar para mudar o mundo.”
+                </p>
+                <p class="referencia2">
+                    -Nelson Mandela
+                </p>
+            </div>
+
+            <a href="duvidas.html"><img src="img/Redes-sociais.png" class="redes"></a>
+
+        </div>
+    </footer>
 </body>
 
 </html>

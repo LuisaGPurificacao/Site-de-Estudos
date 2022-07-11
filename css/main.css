@@ -1,0 +1,197 @@
+body {
+    background-color: #91E5F6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    height: 125px;
+    width: 125px;
+    padding-right: 250px;
+    float: left;
+    border-radius: 100px;
+}
+
+.registro {
+    height: 125px;
+    width: 125px;
+    float: right;
+    padding-right: 20px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.menu {
+    background-color: #F7A399;
+    overflow: hidden;
+    height: 150px;
+    width: 100%;
+    margin: 0 0;
+}
+
+.menu a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #133C55;
+    padding: 14px 16px;
+    line-height: 110px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.menu a:hover {
+    background-color: #F38375;
+    color: #001219;
+    transition: 0.2s ease-in-out
+}
+
+.menu a.active {
+    background-color: #f07665;
+    color: #001219;
+}
+
+.estude {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.aprendendo {
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.estude2 {
+    width: 300px;
+}
+
+.servico {
+    background-color: #fcd062;
+    opacity: 75%;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servico h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.servico2 {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.servico2 p {
+    background-color: #91E5F6;
+    width: 300px;
+    margin: 20px;
+    color: #831e29;
+    border-radius: 100px;
+    padding: 50px 10px 50px 10px;
+    box-shadow: 5px 5px #6dcfe2;
+}
+
+.botao {
+    height: 100px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.botao2 {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.registre {
+    background-color: #F7A399;
+    text-decoration: none;
+    color: #001219;
+    padding: 15px 15px;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #2B2D42;
+    border-style: dashed;
+}
+
+.registre:hover {
+    background-color: #F38375;
+    transition: 0.2s ease-in-out;
+}
+
+.destaque h1 {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.destaque2 {
+    text-align: center;
+    background-color: #E9D8A6;
+    padding-left: 150px;
+    opacity: 80%;
+    width: 100%;
+}
+
+.imagem {
+    opacity: 70%;
+}
+
+.imagem:hover {
+    opacity: 100%;
+}
+
+.rodape {
+    width: 100%;
+    height: 220px;
+    background-color: #F7A399;
+    margin-top: 10px;
+    display: flex;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.rodape>img {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.referencia {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.referencia1 {
+    font-weight: bold;
+    color: #001219;
+    font-size: larger;
+    margin-left: 80px;
+    width: 600px;
+    padding-right: 100px;
+}
+
+.refencia2 {
+    font-weight: bold;
+    color: #001219;
+    font-size: medium;
+    margin-left: 80px;
+}
+
+.redes {
+    width: 200px;
+}
