@@ -1,12 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 body {
-    background-color: #91E5F6;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #D8D8F6;
+    font-family: 'M PLUS Rounded 1c', serif;
+}
+
+header{
+    display: flex;
+    background-color: #9C70C2;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 10px 0 10px;
+}
+
+.menu a:hover {
+    background-color: #BA9BD4;
+    color: black;
+    transition: 0.2s ease-in-out
+}
+
+.menu a.active {
+    background-color: #BA9BD4;
+    color: black;
 }
 
 .logo {
     height: 125px;
     width: 125px;
-    padding-right: 250px;
+    margin-left: 20px;
     float: left;
     border-radius: 100px;
 }
@@ -22,43 +61,13 @@ body {
     width: 100%;
 }
 
-.menu {
-    background-color: #F7A399;
-    overflow: hidden;
-    height: 150px;
-    width: 100%;
-    margin: 0 0;
-}
-
-.menu a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: #133C55;
-    padding: 14px 16px;
-    line-height: 110px;
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 50px;
-}
-
-.menu a:hover {
-    background-color: #F38375;
-    color: #001219;
-    transition: 0.2s ease-in-out
-}
-
-.menu a.active {
-    background-color: #f07665;
-    color: #001219;
-}
-
 .estude {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
+    background-image: url(../img/pattern3.png);
 }
 
 .aprendendo {
@@ -73,13 +82,13 @@ body {
 
 .servico {
     background-color: #fcd062;
-    opacity: 75%;
     width: 100%;
     height: 400px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='57' height='57' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(112, 36, 89,0)'/%3E%3Cpath d='M0 8.5a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 0 8.5 8.5v3a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5z' fill='rgba(229, 174, 102,1)'/%3E%3Cpath d='M20 28.5a 8.5-8.5 0 0 0 8.5-8.5a 11.5-11.5 0 0 1 11.5-11.5v3a-8.5 8.5 0 0 0-8.5 8.5a-11.5 11.5 0 0 1-11.5 11.5zM20 68.5a 8.5-8.5 0 0 0 8.5-8.5a 11.5-11.5 0 0 1 11.5-11.5v3a-8.5 8.5 0 0 0-8.5 8.5a-11.5 11.5 0 0 1-11.5 11.5z' fill='rgba(229, 174, 102,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
 }
 
 .servico h1 {
@@ -95,19 +104,21 @@ body {
 }
 
 .servico2 p {
-    background-color: #91E5F6;
+    background-color: #D8D8F6;
     width: 300px;
     margin: 20px;
     color: #831e29;
     border-radius: 100px;
     padding: 50px 10px 50px 10px;
-    box-shadow: 5px 5px #6dcfe2;
+    box-shadow: 5px 5px #ACACEC;
 }
 
 .botao {
     height: 100px;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: url(../img/pattern2.png);
 }
 
 .botao2 {
@@ -116,19 +127,25 @@ body {
 }
 
 .registre {
-    background-color: #F7A399;
+    background-color: #9C70C2;
     text-decoration: none;
-    color: #001219;
+    color: white;
     padding: 15px 15px;
     border-radius: 50px;
-    border-width: 2px;
-    border-color: #2B2D42;
-    border-style: dashed;
+    box-shadow: 5px 5px #8954B6;
 }
 
 .registre:hover {
-    background-color: #F38375;
+    background-color: #BA9BD4;
+    color: black;
     transition: 0.2s ease-in-out;
+}
+
+.destaque {
+    background-color: #fcd062;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .destaque h1 {
@@ -138,15 +155,16 @@ body {
 }
 
 .destaque2 {
-    text-align: center;
-    background-color: #E9D8A6;
-    padding-left: 150px;
-    opacity: 80%;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    justify-content: center;
 }
 
 .imagem {
     opacity: 70%;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .imagem:hover {
@@ -154,13 +172,15 @@ body {
 }
 
 .rodape {
-    width: 100%;
+    color: white;
     height: 220px;
-    background-color: #F7A399;
+    background-color: #9C70C2;
     margin-top: 10px;
     display: flex;
     margin-top: 80px;
     padding: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .rodape>img {
@@ -168,30 +188,28 @@ body {
     width: 200px;
     height: 200px;
     margin: 10px;
+    margin-left: 40px;
 }
 
 .referencia {
     display: flex;
     flex-direction: column;
-
+    margin-left: -550px;
 }
 
 .referencia1 {
     font-weight: bold;
-    color: #001219;
     font-size: larger;
-    margin-left: 80px;
-    width: 600px;
-    padding-right: 100px;
 }
 
 .refencia2 {
     font-weight: bold;
-    color: #001219;
     font-size: medium;
     margin-left: 80px;
 }
 
 .redes {
     width: 200px;
+    margin: 10px;
+    margin-right: 40px;
 }
