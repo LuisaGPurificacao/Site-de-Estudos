@@ -84,3 +84,31 @@
 .imagem:hover {
     opacity: 100%;
 }
+
+.botao {
+    height: 100px;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: url(../img/pattern2.png);
+}
+
+.botao2 {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.registre {
+    background-color: #9C70C2;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 50px;
+    box-shadow: 5px 5px #8954B6;
+    transition: 0.2s ease-in-out;
+}
+
+.registre:hover {
+    background-color: #BA9BD4;
+    color: black;
+}
