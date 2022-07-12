@@ -3,151 +3,100 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Matérias</title>
-    <style type="text/css">
-        .hd {
-            background-color: #F7A399;
-            overflow: hidden;
-            height: 150px;
-            width: 100%;
-            margin: 0 0;
-        }
-
-        .hd a {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            color: #133C55;
-            padding: 14px 16px;
-            line-height: 110px;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            border-radius: 50px;
-        }
-
-        .hd a:hover {
-            background-color: #F38375;
-            color: #001219;
-            transition: 0.4s ease-in-out
-        }
-
-        .hd a.active {
-            background-color: #f07665;
-            color: #001219;
-        }
-
-        .imagens {
-            transition-duration: 1s;
-            height: 300px;
-            width: 300px;
-        }
-
-        .imagens:hover {
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-            height: 305px;
-            width: 305px;
-            transition-duration: 1s;
-        }
-
-        .tabela {
-            padding-left: 100px;
-            padding-top: 50px;
-        }
-    </style>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Materias</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/materias.css'>
+    <script src='./js/main.js' defer></script>
 </head>
 
-<body
-    style="background: -webkit-gradient(linear, left top, right top, from(#91E5F6), to(#59A5D8)) no-repeat;
-    background: -moz-linear-gradient(left, #91E5F6, #59A5D8); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-    <div class="hd">
-        <figure><img src="wiistude_logo.png" alt="Wiistude" height="125px" ; width="125px" ;
-                style="padding-right: 250px;float:left;border-radius: 100px;"></figure>
-        <a href="index.html"> Home </a>
-        <a href="materias.html" class="active"> Matérias </a>
-        <a href="vestibulares.html"> Vestibulares </a>
-        <a href="planos.html"> Planos </a>
-        <a href="duvidas.html"> Dúvidas </a>
-        <a href="registro.html"><img src="working.png" alt="Wiistude" height="125px" ; width="125px" ;
-                style="float:right; padding-right: 20px; "></a>
-    </div>
-    <table style="text-align: center;"">
-            <tr>
-                <td class=" tabela">
-        <img class="imagens" src="linguagens.png">
-        <p>Língua portuguesa</p>
-        </td>
-        <td class="tabela">
-            <img class="imagens" src="literatura.png">
-            <p>Literatura</p>
-        </td>
-        <td class="tabela">
-            <img class="imagens" src="redacao.png">
-            <p>Redação</p>
-        </td>
-        </tr>
-        <tr>
-            <td class="tabela">
-                <img class="imagens" src="física.png">
+<body>
+    <header>
+        <img src="./img/wiistude_logo.png" alt="Wiistude" class="logo">
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./materias.html" class="active">Matérias</a>
+            <a href="./vestibulares.html">Vestibulares</a>
+            <a href="./planos.html">Planos</a>
+            <a href="./duvidas.html">Dúvidas</a>
+        </nav>
+        <a href="registro.html"><img src="./img/working.png" alt="Wiistude" class="registro"></a>
+    </header>
+    <section id="box-pai">
+        <div class="box-filho1">
+            <div class="box-filho2">
+                <img class="imagens" src="./img/linguagens.png">
+                <p>Língua portuguesa</p>
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/literatura.png">
+                <p>Literatura</p>
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/redacao.png">
+                <p>Redação</p>
+            </div>
+        </div>
+        <div class="box-filho1">
+            <div class="box-filho2">
+                <img class="imagens" src="./img/física.png">
                 <p>Física</p>
-            </td>
-            <td class="tabela">
-                <img class="imagens" src="quimica.png">
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/quimica.png">
                 <p>Química</p>
-            </td>
-            <td class="tabela">
-                <img class="imagens" src="biologia.png">
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/biologia.png">
                 <p>Biologia</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tabela">
-                <img class="imagens" src="Matematica.png">
+            </div>
+        </div>
+        <div class="box-filho1">
+            <div class="box-filho2">
+                <img class="imagens" src="./img/Matematica.png">
                 <p>Matemática</p>
-            </td>
-            <td class="tabela">
-                <img class="imagens" src="geografia.png">
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/geografia.png">
                 <p>Geografia</p>
-            </td>
-            <td class="tabela">
-                <img class="imagens" src="historia.png">
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/historia.png">
                 <p>História</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tabela">
-                <img class="imagens" src="ingles.png">
+            </div>
+        </div>
+        <div class="box-filho1">
+            <div class="box-filho2">
+                <img class="imagens" src="./img/ingles.png">
                 <p>Língua inglesa</p>
-            </td>
-            <td class="tabela">
-                <img class="imagens" src="sociologia.png">
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/sociologia.png">
                 <p>Sociologia</p>
-            </td>
-            <td class="tabela">
-                <img class="imagens" src="filosofia.png">
+            </div>
+            <div class="box-filho2">
+                <img class="imagens" src="./img/filosofia.png">
                 <p>Filosofia</p>
-            </td>
-        </tr>
-    </table>
-    <p style="padding-top:80px"></p>
-    <div style="width: 100%; height:220px;background-color: #F7A399; margin-top:10px">
-        <table>
-            <tr>
-                <td> <img src="wiistude_logo.png" alt="Wiistude"
-                        style="border-radius: 100px ;width: 200px; height: 200px; padding-top:7px; padding-left:27px">
-                </td>
-                <td>
-                    <p
-                        style="font-weight: bold; color:#001219; font-size: larger; margin-left: 80px; width:600px; padding-right: 100px;">
-                        “A educação é a arma mais poderosa que se pode usar para mudar o mundo.”</p>
-                    <p style="font-weight: bold; color:#001219; font-size: medium; margin-left: 80px">-Nelson Mandela
-                    </p>
-                </td>
-                <td>
-                    <a href="duvidas.html"><img src="Redes-sociais.png" style="width: 200px;"></a>
-                </td>
-            </tr>
-        </table>
-    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="rodape">
+            <img src="./img/wiistude_logo.png" alt="Wiistude">
+            <div class="referencia">
+                <p class="referencia1">
+                    “A educação é a arma mais poderosa que se pode usar para mudar o mundo.”
+                </p>
+                <p class="referencia2">
+                    -Nelson Mandela
+                </p>
+            </div>
+
+            <a href="./duvidas.html"><img src="./img/Redes-sociais.png" class="redes"></a>
+
+        </div>
+    </footer>
 </body>
 
 </html>

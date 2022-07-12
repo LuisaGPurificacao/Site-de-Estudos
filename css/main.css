@@ -5,7 +5,7 @@ body {
     font-family: 'M PLUS Rounded 1c', serif;
 }
 
-header{
+header {
     display: flex;
     background-color: #9C70C2;
     height: 150px;
@@ -29,12 +29,12 @@ header{
     text-align: center;
     border-radius: 50px;
     margin: 0 10px 0 10px;
+    transition: 0.2s ease-in-out
 }
 
 .menu a:hover {
     background-color: #BA9BD4;
     color: black;
-    transition: 0.2s ease-in-out
 }
 
 .menu a.active {
@@ -57,62 +57,6 @@ header{
     padding-right: 20px;
 }
 
-.banner {
-    width: 100%;
-}
-
-.estude {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/pattern3.png);
-}
-
-.aprendendo {
-    width: 350px;
-    height: 350px;
-    margin-right: 20px;
-}
-
-.estude2 {
-    width: 300px;
-}
-
-.servico {
-    background-color: #fcd062;
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='57' height='57' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(112, 36, 89,0)'/%3E%3Cpath d='M0 8.5a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 0 8.5 8.5v3a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5z' fill='rgba(229, 174, 102,1)'/%3E%3Cpath d='M20 28.5a 8.5-8.5 0 0 0 8.5-8.5a 11.5-11.5 0 0 1 11.5-11.5v3a-8.5 8.5 0 0 0-8.5 8.5a-11.5 11.5 0 0 1-11.5 11.5zM20 68.5a 8.5-8.5 0 0 0 8.5-8.5a 11.5-11.5 0 0 1 11.5-11.5v3a-8.5 8.5 0 0 0-8.5 8.5a-11.5 11.5 0 0 1-11.5 11.5z' fill='rgba(229, 174, 102,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
-}
-
-.servico h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.servico2 {
-    font-size: 18px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.servico2 p {
-    background-color: #D8D8F6;
-    width: 300px;
-    margin: 20px;
-    color: #831e29;
-    border-radius: 100px;
-    padding: 50px 10px 50px 10px;
-    box-shadow: 5px 5px #ACACEC;
-}
-
 .botao {
     height: 100px;
     justify-content: center;
@@ -133,42 +77,12 @@ header{
     padding: 15px 15px;
     border-radius: 50px;
     box-shadow: 5px 5px #8954B6;
+    transition: 0.2s ease-in-out;
 }
 
 .registre:hover {
     background-color: #BA9BD4;
     color: black;
-    transition: 0.2s ease-in-out;
-}
-
-.destaque {
-    background-color: #fcd062;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-}
-
-.destaque h1 {
-    padding-top: 30px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.destaque2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.imagem {
-    opacity: 70%;
-    margin-right: 40px;
-    margin-left: 40px;
-}
-
-.imagem:hover {
-    opacity: 100%;
 }
 
 .rodape {
